@@ -13,19 +13,13 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (i < n)
 	{
 		if (ss1[i] != ss2[i])
-		{
-			if (ss1[i] - ss2[i] < 0)
-				return (-1);
-			return (1);
-		}
+			return (ss1[i] - ss2[i]);
 		i++;
 	}
 	return (0);
 }
 
-/*
-
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int main()
