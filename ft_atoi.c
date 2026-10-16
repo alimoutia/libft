@@ -1,11 +1,18 @@
 
 #include "libft.h"
 
+int ft_check(int sign)
+{
+	if (sign == 1)
+		return (-1);
+	return (0);
+}
+
 int ft_atoi(const char *str)
 {
 	int i;
 	int sign;
-	int result;
+	long result;
 
 	i = 0;
 	result = 0;
@@ -20,8 +27,22 @@ int ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
+		if ((result > __LONG_MAX__ / 10) 
+			|| (result == __LONG_MAX__ 
+				&& (str[i] - '0') > __LONG_MAX__ % 10))
+			return (ft_check(sign));
 		result = result * 10 + (str[i] - '0');
 		i++;
 	}
-	return (result * sign);
+	return ((int)(result * sign));
 }
+
+// #include <stdio.h>
+
+// int main()
+// {
+// 	const char s[] = "-5666466556555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555655656595655922337203685555554775808";
+// 	const char s1[] = "+0000000000000000000000000000000000000000000000000000123";
+// 	printf("%d\n", ft_atoi(s1));
+// 	printf("%d", atoi(s1));
+// }
