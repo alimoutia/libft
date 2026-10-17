@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amoutia <amoutia@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: amoutia <amoutia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 17:30:35 by amoutia           #+#    #+#             */
 /*   Updated: 2026/10/17 17:30:36 by amoutia          ###   ########.fr       */
@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-void *ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-	size_t all;
-	void *ptr;
+	size_t	all;
+	void	*ptr;
 
 	all = count * size;
 	if (size == 0)

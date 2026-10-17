@@ -3,27 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amoutia <amoutia@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 17:30:06 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/17 17:30:12 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/17 19:50:50 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int ft_check(int sign)
+static	int	ft_check(int sign)
 {
 	if (sign == 1)
 		return (-1);
 	return (0);
 }
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int i;
-	int sign;
-	long result;
+	int		i;
+	int		sign;
+	long	result;
 
 	i = 0;
 	result = 0;
@@ -45,12 +45,9 @@ int ft_atoi(const char *str)
 	}
 	return ((int)(result * sign));
 }
-
 // #include <stdio.h>
-
 // int main()
 // {
-// 	//const char s[] = "5666466556555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555655656595655922337203685555554775808";
 // 	const char s[] = "9223372036854775809";
 // 	const char s1[] = "-21474836477";
 // 	printf("%d\n", ft_atoi(s));

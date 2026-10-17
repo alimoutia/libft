@@ -1,16 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/17 18:59:17 by amoutia           #+#    #+#             */
+/*   Updated: 2026/10/17 19:16:46 by amoutia          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t count_words(char const *s, char c)
+static	size_t	count_words(char const *s, char c)
 {
-	int i;
-	size_t nb;
+	int		i;
+	size_t	nb;
 
 	i = 0;
 	nb = 0;
 	while (s[i])
 	{
-
 		if (s[i] == c && s[i])
 			i++;
 		else
@@ -23,7 +33,7 @@ static size_t count_words(char const *s, char c)
 	return (nb);
 }
 
-static void free_all(char **str, int k)
+static	void	free_all(char **str, int k)
 {
 	while (k > 0)
 	{
@@ -33,11 +43,11 @@ static void free_all(char **str, int k)
 	free(str);
 }
 
-static char **fill_str(char **str, char const *s, char c)
+static	char	**fill_str(char **str, char const *s, char c)
 {
-	int i;
-	int start;
-	int j;
+	int	i;
+	int	start;
+	int	j;
 
 	i = 0;
 	j = 0;
@@ -61,10 +71,10 @@ static char **fill_str(char **str, char const *s, char c)
 	return (str);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	char **str;
-	size_t len;
+	char	**str;
+	size_t	len;
 
 	if (!s)
 		return (NULL);
@@ -72,7 +82,7 @@ char **ft_split(char const *s, char c)
 	str = malloc(sizeof(char *) * (len +1));
 	if (!str)
 		return (NULL);
-	str[len] = NULL;
+	str[len] = (NULL);
 	str = fill_str(str, s, c);
 	if (!str)
 		return (NULL);
