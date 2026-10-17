@@ -1,7 +1,7 @@
 
 #include "libft.h"
 
-int ft_check(int sign)
+static int ft_check(int sign)
 {
 	if (sign == 1)
 		return (-1);
