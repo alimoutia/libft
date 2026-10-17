@@ -19,11 +19,15 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-/*#include <stdio.h>
+#include <stdio.h>
 #include <string.h>
 
 int main()
 {
-	printf("%d", ft_memcmp("hello", "helso", 5));
-	printf("%d", memcmp("hello", "helso", 5));
-}*/
+	char s[] = "Hello";
+	char s1[] = "Helso";
+	printf("%d\n", ft_memcmp("hello", "helso", 5));
+	printf("%d\n", memcmp("hello", "helso", 5));
+	printf("%d\n", ft_memcmp(s, s1, 5));
+	printf("%d", memcmp(s, s1, 5));
+}
