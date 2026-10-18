@@ -6,11 +6,9 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 18:58:21 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/17 19:09:20 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/18 13:51:49 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int c)
 {

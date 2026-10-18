@@ -6,11 +6,9 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 18:58:07 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/17 19:09:09 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/18 12:23:50 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isascii(int c)
 {

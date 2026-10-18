@@ -6,7 +6,7 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 19:02:05 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/17 19:51:45 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/18 12:04:28 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,6 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	**ft_split(char const *s, char c);
+char	*ft_strjoin(char const *s1, char const *s2);
 
 #endif
