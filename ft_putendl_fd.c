@@ -6,7 +6,7 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:08:37 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/19 16:10:05 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/19 22:57:05 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);
-	ft_putchar_fd("\n", fd);
+	ft_putchar_fd('\n', fd);
 }

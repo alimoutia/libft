@@ -6,13 +6,13 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 17:29:11 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/19 17:37:45 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/19 22:59:33 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	char	c;
 

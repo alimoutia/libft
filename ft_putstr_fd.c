@@ -6,7 +6,7 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:02:18 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/19 16:06:28 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/19 23:01:43 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,12 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
 	{
-		ft_putchar_fd(&s[i], fd);
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
 }

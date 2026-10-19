@@ -6,7 +6,7 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 11:40:40 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/19 14:15:13 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/19 23:19:52 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*str;
-	int				len;
+	size_t			len;
 	unsigned int	i;
 
 	if (!s || !f)
@@ -33,19 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[len] = '\0';
 	return (str);
 }
-// #include <stdio.h>
-
-// char	f(char c)
-// {
-// 	if (c == '\0')
-// 		return (c);
-// 	return (c + 1);	
-// }
-
-// int main()
-// {
-// 	char s[] = "abc";
-// 	char *s2 = ft_strmapi(s, f);
-// 	printf("%s", s2);
-// 	free(s2);
-// }
