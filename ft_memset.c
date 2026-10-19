@@ -6,7 +6,7 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 18:59:13 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/17 19:13:25 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/19 13:51:58 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,11 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 // #include <stdio.h>
+// #include <memory.h>
 
 // int main()
 // {
 // 	char b[] = "Hello";
-// 	printf("%s", ft_memset(b, 68, 6));	
+// 	printf("%p\n", ft_memset(b, -1, 6));
+// 	printf("%p", memset(b, -1, 6));
 // }
