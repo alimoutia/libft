@@ -6,7 +6,7 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 17:30:41 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/17 19:08:36 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/20 12:23:48 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,21 @@ int	ft_isalnum(int c)
 
 // int main()
 // {
-// 	printf("%d", ft_isalnum(56));
+// 	// printf("%d\n", ft_isalnum('a'));
+// 	// printf("%d\n", ft_isalnum('Z'));
+// 	// printf("%d\n", ft_isalnum('1'));
+// 	// printf("%d\n", ft_isalnum('9'));
+// 	// printf("%d\n", ft_isalnum('/'));
+// 	// printf("%d\n", ft_isalnum(':'));
+// 	// printf("%d\n", ft_isalnum('@'));
+// 	// printf("%d\n", ft_isalnum('['));
+// 	// printf("%d\n", ft_isalnum('`'));
+// 	// printf("%d\n", ft_isalnum('{'));
+// 	// printf("%d\n", ft_isalnum('_'));
+// 	// printf("%d\n", ft_isalnum(0));
+// 	int i = -1;
+// 	while (i < 255) {
+// 		printf("%d\n", ft_isalnum(i));
+// 		i++;
+// 	}
 // }

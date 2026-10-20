@@ -20,5 +20,10 @@ int	ft_isalpha(int c)
 
 // int main()
 // {
-// 	printf("%d", ft_isalpha(76));
+// 	// printf("%d", ft_isalpha(255));
+// 	int i = -1;
+// 	while (i < 255) {
+// 		printf("%d\n", ft_isalpha(i));
+// 		i++;
+// 	}
 // }
