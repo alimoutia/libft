@@ -6,7 +6,7 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 17:30:23 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/17 19:03:27 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/22 16:59:09 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
-
 // #include <stdio.h>
 // #include <string.h>
 

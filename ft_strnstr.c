@@ -6,7 +6,7 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 19:00:03 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/17 19:18:23 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/23 22:59:58 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	j = 0;
 	if (needle[0] == '\0')
 		return ((char *)haystack);
-	while (haystack[i] && i < len)
+	while (i < len && haystack[i])
 	{
 		j = 0;
 		if (haystack[i] == needle[j])
 		{
-			while (haystack[i + j] == needle[j] && i + j < len && needle[j])
+			while (i + j < len && haystack[i + j] == needle[j] && needle[j])
 				j++;
 			if (needle[j] == '\0')
 				return ((char *)&haystack[i]);
@@ -35,3 +35,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
+// #include <stdio.h>
+// #include <bsd/string.h>
+// int main()
+// {
+// 	// printf("%s\n", ft_strnstr(NULL, "HEllo", 0));
+// 	printf("%s\n", strnstr(NULL, "HEllo", 0));
+// }
