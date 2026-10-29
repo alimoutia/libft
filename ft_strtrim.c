@@ -6,7 +6,7 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 13:55:09 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/18 17:57:25 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/28 16:55:27 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,3 @@ char	*ft_strtrim(char const *s1, char const *s2)
 	}
 	return (ft_substr(s1, start, end - start + 1));
 }
-// #include <stdio.h>
-
-// int main()
-// {
-// 	char *s = ft_strtrim("a b a", "a");
-// 	printf("[%s]", s);
-// 	free(s);
-// }
