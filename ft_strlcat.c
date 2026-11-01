@@ -6,7 +6,7 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 18:59:40 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/17 19:17:30 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/31 18:07:13 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[i] = 0;
 	return (src_len + dst_len);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	char dst[20];
+// 	char *src = "Hello";
+// 	ft_strlcat(dst, src, 5);
+// 	printf("%s", dst);
+// }

@@ -18,14 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-// #include <stdio.h>
-
-// int main()
-// {
-// 	// printf("%d", ft_isalpha(255));
-// 	int i = -1;
-// 	while (i < 255) {
-// 		printf("%d\n", ft_isalpha(i));
-// 		i++;
-// 	}
-// }

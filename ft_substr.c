@@ -6,7 +6,7 @@
 /*   By: amoutia <amoutia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 19:00:14 by amoutia           #+#    #+#             */
-/*   Updated: 2026/10/17 19:18:40 by amoutia          ###   ########.fr       */
+/*   Updated: 2026/10/29 19:18:32 by amoutia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (subs);
 	}
 	i = 0;
-	subs = malloc((slen - (size_t)start) + 1);
+	if (len > slen - start)
+		len = slen - start;
+	subs = malloc(len + 1);
 	if (!subs)
 		return (NULL);
 	while (s[start] && i < len)
